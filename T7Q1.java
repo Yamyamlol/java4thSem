@@ -23,20 +23,21 @@ class OutOfRangeException extends Exception {
 public class T7Q1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         try {
-            System.out.print("Enter employee name:");
+            System.out.println("Enter employee name:");
             String name = sc.nextLine();
             if (!Character.isUpperCase(name.charAt(0))) {
                 throw new FirstLetterException();
             }
 
-            System.out.print("Enter employee ID:");
+            System.out.println("Enter employee ID:");
             int employeeID = Integer.parseInt(sc.nextLine());
             if (employeeID < 2001 || employeeID > 5000) {
                 throw new OutOfRangeException("Employee ID");
             }
 
-            System.out.print("Enter department ID:");
+            System.out.println("Enter department ID:");
             int deptID = Integer.parseInt(sc.nextLine());
             if (deptID < 1 || deptID > 5) {
                 throw new OutOfRangeException("Department ID");
@@ -46,7 +47,9 @@ public class T7Q1 {
             System.out.println("Employee Name: " + name);
             System.out.println("Employee ID: " + employeeID);
             System.out.println("Department ID: " + deptID);
-        } catch (FirstLetterException | OutOfRangeException | NumberFormatException e) {
+        } catch (FirstLetterException e) {
+            System.out.println("Error: " + e.getMessage());
+        } catch (OutOfRangeException e) {
             System.out.println("Error: " + e.getMessage());
         }
     }

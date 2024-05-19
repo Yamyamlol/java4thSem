@@ -1,9 +1,17 @@
+/* 
+      NAME: SANYAM RAWAT
+      SECTION: D
+      ROLL NO: 58
+*/
+
+
 import java.util.Scanner;
 
 public class q12TW {
     public static void main(String[] args) {
         q12TW scenarios = new q12TW();
         
+        System.out.println("\t\t\t******OUTPUT******");
         // Scenario a: Default throw and default catch (JVM)
         System.out.println("Scenario a: Default throw and default catch (JVM)");
         try {

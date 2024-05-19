@@ -1,11 +1,19 @@
+/* 
+      NAME: SANYAM RAWAT
+      SECTION: D
+      ROLL NO: 58
+*/
+
 import java.util.Scanner;
 
 public class q4TW {
     public static void main(String[] args) {
         int m;
         Scanner sc = new Scanner(System.in);
+        System.out.println("\t\t\t******INPUT******");
         System.out.print("INPUT: M = ");
         m = sc.nextInt();
+        System.out.println("\t\t\t******OUTPUT******");
         try {
             if (m <= 2 || m >= 10)
                 throw new IllegalArgumentException("Value must be greater than 2 and less than 10");

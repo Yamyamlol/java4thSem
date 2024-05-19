@@ -1,3 +1,10 @@
+/* 
+      NAME: SANYAM RAWAT
+      SECTION: D
+      ROLL NO: 58
+*/
+
+
 import java.util.Scanner;
 
 public class q7TW {
@@ -5,13 +12,15 @@ public class q7TW {
       public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             int n;
+            System.out.println("\t\t\t******INPUT******");
+            System.out.print("Enter the value of n: ");
             n = scanner.nextInt();
+            scanner.nextLine();
             Bank []depositors = new Bank[n];
             for(int i = 0;i<n;i++)
             {
                   System.out.println("For banker number: "+(i+1));
                   Bank bank = new Bank();
-                  scanner.nextLine();
                   System.out.print("Enter Bank Name:");
                   bank.name = scanner.nextLine();
                   
@@ -25,8 +34,9 @@ public class q7TW {
                   bank.balanceInAccount = scanner.nextDouble();
                   
                   System.out.println();
+                  System.out.println("\t\t\t******OUTPUT******");
                   // Display account information
-                  System.out.print("Account Information:");
+                  System.out.println("Account Information:");
                   bank.display();
                   System.out.println();
 

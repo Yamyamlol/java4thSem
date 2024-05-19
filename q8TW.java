@@ -1,9 +1,17 @@
+/* 
+      NAME: SANYAM RAWAT
+      SECTION: D
+      ROLL NO: 58
+*/
+
+
 import java.util.Scanner;
 import java.util.HashMap;
 
 public class q8TW {
       public static void main(String[] args) {
             
+            System.out.println("\t\t\t******INPUT******");
             Scanner sc = new Scanner(System.in);
             ArrayDemo.arrayFunc();
             int n;
@@ -16,6 +24,7 @@ public class q8TW {
             }
             System.out.print("Enter target: ");
             int target = sc.nextInt();
+            System.out.println("\t\t\t******INPUT******");
             ArrayDemo.arrayFunc(nums, target);
       }
 }
@@ -36,7 +45,7 @@ class ArrayDemo{
             System.out.print("Enter target: ");
             target = sc.nextInt();
             HashMap <Integer, Integer> hm = new HashMap<>();
-            System.out.println("OUTPUT");
+            System.out.println("\t\t\t******OUTPUT******");
             for(int i = 0;i<n;i++){
                   int compliment = target - arr[i];
                   if(hm.containsKey(compliment)){
@@ -49,7 +58,7 @@ class ArrayDemo{
       public static void arrayFunc(int [] nums, int target){
             System.out.println("This is the parametered function");
             HashMap <Integer, Integer> hm = new HashMap<>();
-            System.out.println("OUTPUT");
+            System.out.println("\t\t\t******OUTPUT******");
             for(int i = 0;i< nums.length;i++){
                   int compliment = target - nums[i];
                   if(hm.containsKey(compliment)){

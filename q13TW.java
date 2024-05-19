@@ -1,22 +1,31 @@
+/* 
+      NAME: SANYAM RAWAT
+      SECTION: D
+      ROLL NO: 58
+*/
+
+
 import java.util.Scanner;
 
 public class q13TW {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        
+        System.out.println("\t\t\t******INPUT******");
         try {
             System.out.print("Enter Employee ID: ");
             int empId = sc.nextInt();
             sc.nextLine(); // consume newline left-over
-
+            
             System.out.print("Enter Employee Name: ");
             String empName = sc.nextLine();
-
+            
             System.out.print("Enter Department ID: ");
             int deptId = sc.nextInt();
-
+            
+            System.out.println("\t\t\t******OUTPUT******");
             validateEmployeeDetails(empId, empName, deptId);
-
+            
             Employee emp = new Employee(empId, empName, deptId);
             emp.printDetails();
         } catch (IncompleteOrIncorrectDataException e) {

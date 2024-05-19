@@ -1,9 +1,18 @@
+/* 
+      NAME: SANYAM RAWAT
+      SECTION: D
+      ROLL NO: 58
+*/
+
+
 import java.util.Scanner;
 
 public class q11TW {
       public static void main(String[] args) {
+            System.out.println("\t\t\t******INPUT******");
             Result r = new Result();
             r.readinfo();
+            System.out.println("\t\t\t******OUTPUT******");
             r.printinfo();
             r.showMarks();
       }

@@ -1,9 +1,16 @@
+/* 
+      NAME: SANYAM RAWAT
+      SECTION: D
+      ROLL NO: 58
+*/
+
+
 import java.util.Scanner;
 
 public class q3TW {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+        System.out.println("\t\t\t******INPUT******");
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
         
@@ -27,6 +34,7 @@ public class q3TW {
             wordCount = words.length;
         }
         
+        System.out.println("\t\t\t******OUTPUT******");
         System.out.println("Number of digits: " + digitCount);
         System.out.println("Number of alphabets: " + alphabetCount);
         System.out.println("Number of words: " + wordCount);
